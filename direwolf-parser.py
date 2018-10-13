@@ -8,8 +8,7 @@ import csv
 
 infile = "/var/log/direwolf/2018-09-30.log"
 counter = 0
-        #channel, time_int, time_iso, src_addr, station_heard, audio_lvl, error_corr, dti, obj_name, symb, latitude, longitude, speed, course, altitude, freq, offset, tone,
- system, status, telemetry, comment = line.split ( ',' )
+        #channel, time_int, time_iso, src_addr, station_heard, audio_lvl, error_corr, dti, obj_name, symb, latitude, longitude, speed, course, altitude, freq, offset, tone, system, status, telemetry, comment = line.split ( ',' )
 
 with open ( infile ) as f :
         reader = csv.reader ( line.replace ( '\0', '' ) for line in f )
