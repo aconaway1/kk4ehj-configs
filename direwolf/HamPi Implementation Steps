@@ -1,0 +1,12 @@
+- Update, update, update
+- Install Direwolf
+  - Add direwolf user
+  - Add /var/log/direwolf
+  - chown direwolf:dirwolf /var/log/direwolf
+- Configure Direwolf
+  - Install Git 
+  - Download this repo
+  - Modify samples as needed
+  - Copy config to /etc/direwolf.conf
+  - Start service
+  - Enable service
