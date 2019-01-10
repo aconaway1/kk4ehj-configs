@@ -276,8 +276,8 @@ KISSPORT 8100
 # Every half hour, it can travel via two digipeater hops.
 # The others are kept local.
 #
-
-PBEACON delay=1  every=1 overlay=S symbol="digi" lat=34^32.22N long=083^55.04W power=50 height=20 gain=4 comment="Testing Pi" via=WIDE1-1,WIDE2-1 
+#  227RRRS
+PBEACON delay=1  every=1 overlay=S symbol="digi" lat=34^32.22N long=083^55.04W power=50 height=20 gain=4 comment="Raspberry Pi Beacon" via=WIDE1-1,WIDE2-1 
 #PBEACON delay=11 every=30 overlay=S symbol="digi" lat=42^37.14N long=071^20.83W power=50 height=20 gain=4 comment="Chelmsford MA"  
 #PBEACON delay=21 every=30 overlay=S symbol="digi" lat=42^37.14N long=071^20.83W power=50 height=20 gain=4 comment="Chelmsford MA"  
 
