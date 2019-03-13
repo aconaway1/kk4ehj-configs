@@ -1,0 +1,5 @@
+#!/bin/bash
+#
+#
+cd /root/linbpq
+screen -dmS LinBPQ /root/linbpq/linbpq
