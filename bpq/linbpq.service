@@ -1,0 +1,12 @@
+[Unit]
+Description=LinBPQ BBS for Winlink
+After=direwolf.service
+
+[Service]
+User=root
+WorkingDirectory=/root/linbpq
+ExecStart=/usr/bin/linbpq
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
