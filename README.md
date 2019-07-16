@@ -11,12 +11,14 @@ I've started adding some templates and scripts to generate Direwolf and LinBPQ c
 * **gendirewolfaprs.py**: Generates a simple APRS config for Direwolf based on **direwolf-aprsbeacon-template.py**
 * **genlinbpq.py**: Generates a config file to be used as **bpq32.cfg**; based on the contents of **linbpq-template.py**
 
-```Usage: gendirewolfaprs.py CALLSIGN LATITUDE LONGITUDE
+```
+Usage: gendirewolfaprs.py CALLSIGN LATITUDE LONGITUDE
   Where:
     CALLSIGN is your amateur radio call (duh!)
     LATITUDE and LONGITUDE are like XX^YY.ZZN or AAA^BB.CCW
 ```
-```Usage: genlinbqp.py CALLSIGN SSID LOCATOR FREQUENCY CMSPASS LOCALPASS
+```
+Usage: genlinbqp.py CALLSIGN SSID LOCATOR FREQUENCY CMSPASS LOCALPASS
   Where:
     CALLSIGN is your amateur radio call (duh!)
     SSID is your SSID (duh, again!)
