@@ -4,7 +4,7 @@ After=direwolf.service
 
 [Service]
 User=root
-WorkingDirectory=/root/linbpq
+WorkingDirectory=/home/pi/linbpq
 ExecStart=/usr/bin/linbpq
 Restart=always
 
