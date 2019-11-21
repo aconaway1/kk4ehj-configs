@@ -29,4 +29,7 @@ Usage: genlinbqp.py CALLSIGN SSID LOCATOR FREQUENCY CMSPASS LOCALPASS
 ```
 #  Some of the working config files
 There may be quite a few files in the config directory, but these are actually working. Yes, I know I need to learn what branches are.  :)
-* **direwolf.conf-aprsbeacon-gpsd-simple** : This queries a remote GPSD server for location and configured direwolf to act like a tracker.
+* **direwolf/direwolf.conf-aprsbeacon-gpsd-simple** : This queries a remote GPSD server for location and configured direwolf to act like a tracker.
+* **direwolf/direwolf.conf-winlink-simple** : This sets up Direwolf to be a network-based KISS TNC.  The idea is that you plug your Pi in to your radio and run the Winlink client on you laptop or shack computer to connect and get out.
+* **direwolf/direwolf.service** : This is the startup script for Direwolf to run in the background.  It makes sure that `/etc/direwolf.conf` exists before running.
+* **bpq/linbpq.service** : This is the startup script for LinBQP to run in the background.  LinBQP isn't packaged as gracefully as Direwolf, so it's a little convoluted.  The important part is the `After` directive, which makes sure Direwolf is running before LinBPQ fires up.
